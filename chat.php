@@ -39,14 +39,16 @@ s0.parentNode.insertBefore(s1,s0);
 			<a href="https://web.whatsapp.com/">Contact</a>
 		</div>
 
-
+              
 
 
 
 		<span id="open" class="open" onclick="openNav()">&#9776</span>
 		<h1>welcome</h1>
 		<a href="https://web.whatsapp.com/" class="btn">get started</a>
+		<a href="https://tawk.to/chat/59a0d6a3b6e907673de09af0/default/?$_tawk_popout=true" class="btn">Begin</a>
 	</div>
+	
 
 
 
