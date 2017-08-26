@@ -9,6 +9,7 @@
     </style>
   </head>
   <body style="background-image:url('images/imgg.jpg');">
+     <a href="2.html"><button style="position:absolute;right:30px;top:60px;height:50px;width:70px;background-color:black;color:cyan">Log-Out</button></a>
       <p id="f" style="color:cyan;font-size:50px;Margin-left:200px;">Welcome To The Venture City </p>
       <button id="hi" onclick="getLocation()">Get Details about your location</button>
     <div id="map"></div>
