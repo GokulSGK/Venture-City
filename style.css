@@ -1,0 +1,154 @@
+body {
+	font-family: verdana;
+	font-size: 15px;
+                  background-image: url("images/smart.jpg");
+	background-size: cover;
+	margin:0;
+                  height:100%;
+                  width:100%;
+
+}
+#heading
+{
+	font-variant: small-caps;
+}
+
+
+input[type=text], input[type=email], input[type=password], input[type=number] {
+	display: flex;
+	border: 1px solid silver;
+	border-radius: 4px;
+	padding: 8px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 10px 0;
+}
+
+div#form-content {
+	background-color: white;
+	border-radius: 15px;
+	border: 2px solid white;
+	max-width: 400px;
+	margin: 50px auto;
+	padding: 20px;
+	margin-left:20px;
+	box-sizing: border-box;
+	transition: all 0.5s;
+}
+
+div#form-content:hover
+{
+	box-shadow: 5px 10px 15px black;
+}
+
+div#form-head {
+	background-color: red;
+	color: white;
+	font-weight: bold;
+	text-align:center;
+	text-transform: uppercase;
+	text-shadow: 1px 8px 15px #dc2368;
+	padding: 20px;
+	font-size: 20px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+button.sign-up-btn  {
+	position: relative;
+	border-radius: 5px;
+	border: 2px solid pink;
+	background-color: red;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 5px 10px;
+	font-weight: bold;
+	font-size: 15px;
+	cursor: pointer;
+	margin-left: 35%;
+	text-shadow: 1px 8px 15px #dc2368;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+button.sign-up-btn:hover {
+	border: 2px solid pink;
+	padding: 5px 20px;
+}
+
+
+input:focus {
+	border: 2px solid cyan;
+}
+
+.sign-up-info
+{
+	text-align: center;
+}
+
+hr
+{
+	width: 300px;
+}
+
+
+/* Log-In Form */
+.log-in-form
+{
+	border :2px solid white;
+	border-radius: 15px;
+	padding: 15px;
+	background-color: white;
+	margin-top: 20vh;
+	max-width: 500px;
+	box-sizing: border-box;
+	transition: all 0.5s;
+}
+
+.log-in-form:hover
+{
+	box-shadow: 5px 10px 15px black;
+}
+
+
+.log-in-head
+{
+	background-color: red;
+	color: white;
+	padding: 15px 20px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.log-in-btn
+{
+	margin-left: 40%;
+	background-color: red;
+	border:2px solid pink;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 5px 10px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.log-in-btn:hover
+{
+	box-shadow: 3px 6px 8px black;
+}
+
+input#login-username,#login-password
+{
+	margin-bottom: 15px;
+}
+
+
+

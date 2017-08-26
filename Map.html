@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body background-color="black">
+    <h3 id>My Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+        var x = document.getElementById("demo");
+        var z1=0,z2=0;
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    z1 = position.coords.latitude; 
+    z2 = position.coords.longitude;
+     x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+      function initMap() {
+        var uluru = {lat: z1, lng: z2};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: parseInt(zoo()),
+          center: uluru
+        });
+          function zoo() {
+            var d = 40075004; // in meters
+            var e = 400;
+            var r = d / 256;
+            var zoomLevel = 1;
+            while ((r * e) > 2000) {
+               e /= 2;
+             ++zoomLevel;
+             }
+    
+    return zoomLevel;
+}
+        var marker = new google.maps.Marker({
+          position: uluru,
+          label: "T",
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKfNnVFgy5M62NA5dPb5EHeqPXXlO5SHY &callback=initMap">
+    </script>
+  </body>
+</html>

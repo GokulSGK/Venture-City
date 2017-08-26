@@ -1,0 +1,104 @@
+html{
+	font-family: sans-serif;
+}
+
+html,body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.wrapper{
+	height: 100vh;
+	width: 100%;
+	background-color: #f73459;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+	padding: 7em 0 1em 0;
+	color: white;
+	text-transform: uppercase;
+}
+
+.btn {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bolder;
+	color: white;
+	line-height: 1em;
+	border: 1px solid white;
+	padding: 9px 15px;
+	border-radius: 8px;
+	box-sizing: border-box;
+	transition: 0.4s;
+
+}
+
+.btn:hover{
+	color: #f73459;
+	background-color: white;
+	border: 1px solid white;
+	
+	box-shadow: 2px 2px 2px black;
+}
+
+.open{
+	font-size: 30px;
+	color:white;
+	float: left;
+	margin: 1em 0 0 1em;
+	cursor: pointer;
+	display: block;
+}
+
+.nav{
+	width: 0;
+	overflow: hidden;
+	height: 100vh;
+	z-index: 1;
+	position: absolute;
+	background-color: rgba(27,34,59,1);
+	transition: 0.4s;
+	display: block;
+}
+
+.nav a{
+	clear: left;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 22px;
+	display: block;
+	padding: 1em 0;
+	transition: 0.3s;
+
+}
+
+.close {
+
+	float: left;
+	margin: 1em 0 0 1em;
+}
+
+.close .close1{
+	font-size: 40px;
+}
+
+.nav a:not(:first-child):hover{
+	background-color: orange;
+}
+
+@media only screen and (max-width:500px)
+{
+	h1{
+		font-size: 30px;
+		font-weight: lighter;
+	}
+
+	.nav a{
+		font-size: 17px;
+		font-weight: bold;
+	}
+}
