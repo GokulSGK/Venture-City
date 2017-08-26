@@ -30,6 +30,7 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 </head>    
 <body>
+	 <a href="2.html"><button style="position:absolute;right:30px;top:60px;height:50px;width:70px;background-color:black;color:cyan">Log-Out</button></a>
 	<div class="wrapper">
 		
 		<div class="nav" id="nav">
